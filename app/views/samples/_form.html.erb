@@ -1,0 +1,77 @@
+<%= form_for(@sample) do |f| %>
+  <% if @sample.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sample.errors.count, "error") %> prohibited this sample from being saved:</h2>
+
+      <ul>
+      <% @sample.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :order_id %><br>
+    <%= f.number_field :order_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :estimated_amount %><br>
+    <%= f.text_field :estimated_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :how_estimated %><br>
+    <%= f.text_area :how_estimated %>
+  </div>
+  <div class="field">
+    <%= f.label :preparation %><br>
+    <%= f.text_field :preparation %>
+  </div>
+  <div class="field">
+    <%= f.label :blot %><br>
+    <%= f.text_field :blot %>
+  </div>
+  <div class="field">
+    <%= f.label :pieces %><br>
+    <%= f.text_field :pieces %>
+  </div>
+  <div class="field">
+    <%= f.label :buffer %><br>
+    <%= f.text_field :buffer %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br>
+    <%= f.text_field :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :concentration %><br>
+    <%= f.text_field :concentration %>
+  </div>
+  <div class="field">
+    <%= f.label :enzyme %><br>
+    <%= f.text_field :enzyme %>
+  </div>
+  <div class="field">
+    <%= f.label :label %><br>
+    <%= f.text_field :label %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :special_instructions %><br>
+    <%= f.text_area :special_instructions %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

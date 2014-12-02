@@ -1,0 +1,52 @@
+<html><!-- Site designed by Gregory Kise, Intermedia Associates LLC, www.intermedia7.com -->
+<!-- All code Copyright � 1999, 2002 Bowers Programming, www.bowersprogramming.com -->
+<!-- All Rights Reserved -->
+<!-- Bowers Programming, phone: (360) 671-5280 -->
+<title>TUCF - Tufts University Core Facility - DNA Sequencing and Synthesis, Protein Sequencing, Peptide Synthesis Services</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="DESCRIPTION" content="Tufts University Core Facility provides an extensive array of services to support researchers. Our services include DNA Synthesis of custom oligonuclotides, DNA and Protein Sequencing, Peptide Synthesis, Mass Spectrometer Analysis, and Proteomic HPLC / MS with Nanospray.">
+<meta name="KEYWORDS" content="custom peptide synthesis, DNA sequencing service, custom DNA synthesis, primer synthesis, oligonucleotide synthesis, mass spectrometry service, proteomic core facility, MALDI-TOF, chromatogram, ABI 3100 DNA sequencers, order online, chromatogram">
+<meta name="robots" content="index,follow">
+<style media="all" type="text/css">
+* { margin: 0px; padding: 0px; }
+html { height:100%; }body {   background: white;   color:#999999;   font: 9px Times New Roman, Times, serif;   text-align:center;   width:100%;   height:100%;
+}#hcenter {   border:0px;   position:absolute;   top:50%;   left:50%;   text-align:left;   margin-top:-180px;   margin-left:-315px;   height:360px;   width:630px;   background: white url('frontpage/frontpage-background.jpg') no-repeat top center;
+}#dnaseq, #dnasyn, #nextgen, #peptide, #proteinseq {   position: absolute;   display:none;   z-index:10;   width:59px; height:59px; 
+}#dnaseq {left:175px; top:2px;}
+#proteinseq {left:58px; top:61px;}
+#dnasyn {left:116px; top:238px;}
+#nextgen {left:235px; top:180px;}
+#peptide {left:410px; top:297px;}#dnaseq_t, #dnasyn_t, #nextgen_t, #peptide_t, #proteinseq_t {   position:absolute;   display:block;   z-index:11;   width:120px; height:59px;
+}#dnaseq_t {left:175px; top:2px;}
+#proteinseq_t {left:0px; top:61px;}
+#dnasyn_t {left:55px; top:238px;}
+#nextgen_t {left:235px; top:180px;}
+#peptide_t {left:410px; top:297px;}#about, #services, #orders, #contact, #legal {   position:absolute;   width:96px;   height:13px;   left:534px; 
+}
+#about {top:125px;}
+#services {top:139px;}
+#orders {top:153px;}
+#contact {top:167px;}
+#legal {top:200px;}a:link    {color:#696969; font-weight:bold; text-decoration: none;}
+a:visited {color:#696969; font-weight:bold; text-decoration: none;}
+a:hover   {color:#696969; font-weight:bold; text-decoration: none;}
+a:active  {color:#696969; font-weight:bold; text-decoration: none;}
+</style>
+<script media="all" type="text/javascript">
+function show(id) {   document.getElementById(id).style.display='block';
+}function hide(id) {   document.getElementById(id).style.display='none';
+}
+</script>
+<div id="hcenter">
+<div id="dnaseq"><img src="images/fp-dnasequencingpicon.gif" alt="DNA Sequencing" height="59" width="59"></div>
+<div id="dnaseq_t" onmouseover="show('dnaseq');" onmouseout="hide('dnaseq');"><a href="dnasequencing-f.html" target="_top"><img src="images/spacer.gif" alt="DNA Sequencing" height="59" width="120" border="0"></a></div><div id="proteinseq"><img src="/assets/images/fp-proteinsequencing-on.gif" alt="Protein Sequencing" height="59" width="59"></div>
+<div id="proteinseq_t" onmouseover="show('proteinseq');" onmouseout="hide('proteinseq');"><a href="protein-f.html" target="_top"><img src="images/spacer.gif" alt="Protein Sequencing" height="59" width="120" border="0"></a></div><div id="dnasyn"><img src="images/fp-dnasynthesispicon.gif" alt="DNA Synthesis" height="59" width="59"></div>
+<div id="dnasyn_t" onmouseover="show('dnasyn');" onmouseout="hide('dnasyn');"><a href="dnasynthesis-f.html" target="_top"><img src="images/spacer.gif" alt="DNA Synthesis" height="59" width="120" border="0"></a></div><div id="nextgen"><img src="images/fp-nextgen-on.jpg" alt="High-Throughput DNA Sequencing" height="59" width="59"></div>
+<div id="nextgen_t" onmouseover="show('nextgen');" onmouseout="hide('nextgen');"><a href="http://tucf-genomics.tufts.edu/" target="_top"><img src="images/spacer.gif" alt="Next-Gen DNA Sequencing" height="59" width="120" border="0"></a></div><div id="peptide"><img src="images/fp-proteinsynthesispicon.gif" alt="Peptide Synthesis" height="59" width="59"></div>
+<div id="peptide_t" onmouseover="show('peptide');" onmouseout="hide('peptide');"><a href="peptidesynthesis-f.html" target="_top"><img src="images/spacer.gif" alt="Peptide Synthesis" height="59" width="120" border="0"></a></div><div id="about"><a href="aboutus-f.html" target="_top"><img src="images/spacer.gif" alt="About Us" height="13" width="96" border="0"></a></div>
+<div id="services"><a href="services-f.html" target="_top"><img src="images/spacer.gif" alt="Services" height="13" width="96" border="0"></a></div>
+<div id="orders"><a href="ordering-f.html" target="_top"><img src="images/spacer.gif" alt="Ordering Information" height="13" width="96" border="0"></a></div>
+<div id="contact"><a href="contactus-f.html" target="_top"><img src="images/spacer.gif" alt="Contact Us" height="13" width="96" border="0"></a></div>
+<div id="legal"><a href="0dnasynthesis-f2.html" target="_top">..</a> <a href="legal-f.html" target="_top">legal</a> | <a href="credits-f.html" target="_top">site credits</a></div>
+</div>
+</html>

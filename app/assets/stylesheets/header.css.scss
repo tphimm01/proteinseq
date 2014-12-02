@@ -1,0 +1,27 @@
+/* Rules for HEADER */
+#header
+{
+	/*	color: #369;	*/
+	background-image: url(/assets/header_bg.png);
+	background-repeat: no-repeat;
+	background-position: right;	
+	color: #D17100;
+	font-weight: bold;
+}
+#headercellright {	
+	text-align: center;
+	vertical-align: middle;
+/*	width: 770px;	*/
+	width: 100%;
+}
+#header a
+{
+	color: #369;
+	text-decoration: none;
+	font-weight: normal;	
+}
+#header a:hover { font-weight: bold; }
+	
+
+/* End rules for HEADER */
+

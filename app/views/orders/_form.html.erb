@@ -1,0 +1,89 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_option %><br>
+    <%= f.text_field :payment_option %>
+  </div>
+  <div class="field">
+    <%= f.label :tufts_dept_id %><br>
+    <%= f.text_field :tufts_dept_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tufts_grant %><br>
+    <%= f.text_field :tufts_grant %>
+  </div>
+  <div class="field">
+    <%= f.label :tmc_cost_center %><br>
+    <%= f.text_field :tmc_cost_center %>
+  </div>
+  <div class="field">
+    <%= f.label :tmc_dept %><br>
+    <%= f.text_field :tmc_dept %>
+  </div>
+  <div class="field">
+    <%= f.label :tmc_box %><br>
+    <%= f.text_field :tmc_box %>
+  </div>
+  <div class="field">
+    <%= f.label :company_name %><br>
+    <%= f.text_field :company_name %>
+  </div>
+  <div class="field">
+    <%= f.label :po %><br>
+    <%= f.text_field :po %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_card_no %><br>
+    <%= f.text_field :credit_card_no %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_card_exp %><br>
+    <%= f.text_field :credit_card_exp %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_card_cvvs %><br>
+    <%= f.text_field :credit_card_cvvs %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_address %><br>
+    <%= f.text_field :shipping_address %>
+  </div>
+  <div class="field">
+    <%= f.label :billing_address %><br>
+    <%= f.text_field :billing_address %>
+  </div>
+  <div class="field">
+    <%= f.label :tucf_startup_no %><br>
+    <%= f.number_field :tucf_startup_no %>
+  </div>
+  <div class="field">
+    <%= f.label :tucf_startup_code %><br>
+    <%= f.number_field :tucf_startup_code %>
+  </div>
+  <div class="field">
+    <%= f.label :tucf_cycle_no %><br>
+    <%= f.number_field :tucf_cycle_no %>
+  </div>
+  <div class="field">
+    <%= f.label :tucf_cycle_code %><br>
+    <%= f.number_field :tucf_cycle_code %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

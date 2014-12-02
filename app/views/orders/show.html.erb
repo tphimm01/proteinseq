@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @order.user_id %>
+</p>
+
+<p>
+  <strong>Payment option:</strong>
+  <%= @order.payment_option %>
+</p>
+
+<p>
+  <strong>Tufts dept:</strong>
+  <%= @order.tufts_dept_id %>
+</p>
+
+<p>
+  <strong>Tufts grant:</strong>
+  <%= @order.tufts_grant %>
+</p>
+
+<p>
+  <strong>Tmc cost center:</strong>
+  <%= @order.tmc_cost_center %>
+</p>
+
+<p>
+  <strong>Tmc dept:</strong>
+  <%= @order.tmc_dept %>
+</p>
+
+<p>
+  <strong>Tmc box:</strong>
+  <%= @order.tmc_box %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @order.company_name %>
+</p>
+
+<p>
+  <strong>Po:</strong>
+  <%= @order.po %>
+</p>
+
+<p>
+  <strong>Credit card no:</strong>
+  <%= @order.credit_card_no %>
+</p>
+
+<p>
+  <strong>Credit card exp:</strong>
+  <%= @order.credit_card_exp %>
+</p>
+
+<p>
+  <strong>Credit card cvvs:</strong>
+  <%= @order.credit_card_cvvs %>
+</p>
+
+<p>
+  <strong>Shipping address:</strong>
+  <%= @order.shipping_address %>
+</p>
+
+<p>
+  <strong>Billing address:</strong>
+  <%= @order.billing_address %>
+</p>
+
+<p>
+  <strong>Tucf startup no:</strong>
+  <%= @order.tucf_startup_no %>
+</p>
+
+<p>
+  <strong>Tucf startup code:</strong>
+  <%= @order.tucf_startup_code %>
+</p>
+
+<p>
+  <strong>Tucf cycle no:</strong>
+  <%= @order.tucf_cycle_no %>
+</p>
+
+<p>
+  <strong>Tucf cycle code:</strong>
+  <%= @order.tucf_cycle_code %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

@@ -1,0 +1,14 @@
+<table id="header" width=100%>
+  <tbody>
+  <tr>
+    <td ALIGN=left style="vertical-align: middle;" width=200px>
+      <center><a href="http://www.tufts.edu/"><%= image_tag "Tufts_blue.png", :width => 200 %></a><br/>Tufts Medical School</center>
+    </td>
+    <td ALIGN=center id="headercellright" width=100%>
+      <%=link_to "home", {:controller => :home, :action => :index}, :class => is_active?("index") -%> |
+      <%=link_to "about us", {:controller => :home, :action => :about_us}, :class => is_active?("about_us") -%> |
+      <%=link_to "contact", {:controller => :home, :action => :contact}, :class => is_active?("contact") -%>
+    </td>
+  </tr>
+  </tbody>
+</table>

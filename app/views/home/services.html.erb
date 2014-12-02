@@ -1,0 +1,67 @@
+<div style="float: right; margin: 1em"> <%= image_tag "services1.png", :width => 110 -%> </div>
+<h2>SERVICES</h2>
+<p align="justify">
+	The Tufts University Core Facility provides an extensive array of services to support the researchers at Tufts University as well as outside investigators. The facility's staff has years of proven technical proficiency and experience with high throughput characterization, purification and laboratory automation.
+</p>
+
+<h2>A quick view of our services</h2>
+
+<table class="home1">
+	<tr>
+		<th><%=link_to "DNA SEQUENCING", {:controller => :home, :action => :dna_sequencing}, :class => is_active?("dna_sequencing") -%></th>
+		<td>-</td>
+		<td>Automated sequencing with read lengths of 500-800 bases.</td>
+	</tr>
+	<tr>
+		<th><%=link_to "DNA SYNTHESIS", {:controller => :home, :action => :dna_synthesis}, :class => is_active?("dna_synthesis") -%></th>
+		<td>-</td>
+		<td>Custom oligonuclotides often within 24 hours.</td>
+	</tr>
+	<tr>
+		<th>
+			<%=link_to "MASS SPEC", {:controller => :home, :action => :mass_spec_analysis}, :class => is_active?("mass_spec_analysis") -%>
+			<br><%=link_to "ANALYSIS", {:controller => :home, :action => :mass_spec_analysis}, :class => is_active?("mass_spec_analysis") -%>
+		</th>
+		<td>-</td>
+		<td>MALDI-TOF-MS. Linear Mode only. Ideal for a fast mass determination and purity check. This is not a quantitative tool.</td>
+	</tr>
+	<tr>
+		<th>
+			<a href="http://tucf-genomics.tufts.edu">NEXT-GEN DNA</a>
+			<br><a href="http://tucf-genomics.tufts.edu">SEQUENCING</a>
+		</th>
+		<td>-</td>
+		<td>
+			The MiSeq & HiSeq 2500 systems can generate highly accurate results in under a week for discoveries in genomics, epigenomics, gene expression analysis, and protein-nucleic acid interactions.
+		</td>
+	</tr>
+	<tr>
+		<th><%=link_to "PEPTIDE SYNTHESIS", {:controller => :home, :action => :peptide_synthesis}, :class => is_active?("peptide_synthesis") -%></th>
+		<td>-</td>
+		<td>Custom peptides and libraries.</td>
+	</tr>
+	<tr>
+		<th><%=link_to "PROTEIN SEQUENCING", {:controller => :home, :action => :protein_sequencing}, :class => is_active?("protein_sequencing") -%></th>
+		<td>-</td>
+		<td>Automated Edman Degradation.</td>
+	</tr>
+</table>
+
+<p align=center ><br><%= image_tag "fa1.png", :width => 600 -%> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

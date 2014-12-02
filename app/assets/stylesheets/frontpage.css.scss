@@ -1,0 +1,74 @@
+
+html { height:100%; }
+
+#bodybg
+{
+/*	background-color: #ededed; 	*/
+	background-color: #ffffff; 
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none; 
+}
+
+#hcenter {   
+	border:0px;   
+	position:absolute;   
+	top:50%;   
+	left:50%;   
+	text-align:left;   
+	margin-top:-180px;   
+	margin-left:-315px;   
+	height:360px;   
+	width:630px;   
+	background: white url('frontpage/frontpage-background.jpg') no-repeat top center;
+}
+
+#dnaseq, #dnasyn, #nextgen, #peptide, #proteinseq {   
+	position: absolute;   
+	display:none;   
+	z-index:10;   
+	width:59px; 
+	height:59px; 
+}
+
+#dnaseq { left:175px; top:2px; }
+#proteinseq { left:58px; top:61px; }
+#dnasyn { left:116px; top:238px; }
+#nextgen { left:235px; top:180px; }
+#peptide { left:410px; top:297px; }
+
+#dnaseq_t { left:175px; top:2px; }
+#proteinseq_t { left:0px; top:61px; }
+#dnasyn_t { left:55px; top:238px; }
+#nextgen_t { left:235px; top:180px; }
+#peptide_t { left:410px; top:297px; }
+
+#dnaseq_t, #dnasyn_t, #nextgen_t, #peptide_t, #proteinseq_t {   
+	position:absolute;   
+	display:block;   
+	z-index:11;   
+	width:120px; 
+	height:59px;
+}
+
+#about, #services, #orders, #contact, #legal {   
+	position:absolute;   
+	width:96px;   
+	height:13px;   
+	left:534px; 
+}
+
+#about {top:125px;}
+#services {top:139px;}
+#orders {top:153px;}
+#contact {top:167px;}
+
+#legal {
+	top:200px; 	
+	font: 9px Times New Roman, Times, serif;
+	a:link    {color:black; font-weight:bold; text-decoration: none;}
+	a:visited {color:black; font-weight:bold; text-decoration: none;}
+}
+

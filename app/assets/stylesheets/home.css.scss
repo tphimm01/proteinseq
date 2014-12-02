@@ -1,0 +1,96 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* TABLES RULES for:	- views/home/dna_sequencing.html
+						- views/home/dna_synthesis.html
+						- views/home/mass_spec_analysis.html	*/
+table.home1 {
+	width: 90%;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+}
+table.home1 td {
+	vertical-align: top;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	padding: 2px;
+}
+table.home1 th {
+	width: 30%;
+	vertical-align: top;
+	text-align: right;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+}
+table.home1 tr.rowOdd td,
+table.home1 tr.rowOdd th {background-color: white}
+
+table.home1 tr.rowEven td,
+table.home1 tr.rowEven th {background-color: #fbae3f}
+
+
+/* TABLES RULES for:	- views/home/ordering.html		
+						- views/home/peptide_synthesis.html		
+						- views/home/protein_Sequencing.html		*/
+table.home2 {
+	width: 90%;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+}
+table.home2 td {
+	vertical-align: top;
+	text-align: center;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	padding: 2px;
+}
+table.home2 th {
+	width: 30%;
+	vertical-align: top;
+	text-align: center;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+#	background-color: yellow;
+	border-bottom: 3px groove #D17100; 
+
+}
+
+
+/* TABLES RULES for:	- views/home/peptide_synthesis.html		*/
+table.home3 {
+	width: 90%;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+}
+table.home3 td {
+	vertical-align: top;
+	text-align: left;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	padding: 2px;
+}
+table.home3 th {
+#	width: 30%;
+	vertical-align: top;
+	text-align: right;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+#	background-color: yellow;
+}
+
+
+
+

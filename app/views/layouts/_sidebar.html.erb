@@ -1,0 +1,28 @@
+
+
+
+
+
+<div id="leftnav">
+<p><%=link_to image_tag("tucf-logo.gif", :alt => "Home", :border => 0), {:controller => :home, :action => :index}, :class => is_active?("index") -%></p>
+
+	<ul>
+	  <li><%=link_to "About Us", {:controller => :home, :action => :about_us}, :class => is_active?("about_us") -%> </li>
+	  <li><%=link_to "Services", {:controller => :home, :action => :services}, :class => is_active?("services") -%> </li>
+	  <li><%=link_to "Ordering Info", {:controller => :home, :action => :ordering}, :class => is_active?("ordering") -%> </li>
+	  <li><%=link_to "Contact Us", {:controller => :home, :action => :contact}, :class => is_active?("contact") -%> </li>
+	</ul>
+<hr>
+
+<h2>TUCF SERVICES</h2>
+
+	<ul>
+	  <li><%=link_to "DNA Sequencing", {:controller => :home, :action => :dna_sequencing}, :class => is_active?("dna_sequencing") -%></li>
+	  <li><%=link_to "DNA Synthesis", {:controller => :home, :action => :dna_synthesis}, :class => is_active?("dna_synthesis") -%></li>
+	  <li><%=link_to "Mass Spectrometer Analysis", {:controller => :home, :action => :mass_spec_analysis}, :class => is_active?("mass_spec_analysis") -%></li>
+	  <li><a href="http://tucf-genomics.tufts.edu">Next-Gen DNA Sequencing</a></li>
+	  <li><%=link_to "Peptide Synthesis", {:controller => :home, :action => :peptide_synthesis}, :class => is_active?("peptide_synthesis") -%></li>
+	  <li><%=link_to "Protein Sequencing", {:controller => :home, :action => :protein_sequencing}, :class => is_active?("protein_sequencing") -%></li>
+	</ul>
+</div>
+<br>

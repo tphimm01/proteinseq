@@ -1,0 +1,71 @@
+<html><!-- Site designed by Gregory Kise, Intermedia Associates LLC, www.intermedia7.com -->
+<!-- All code Copyright � 1999, 2002 Bowers Programming, www.bowersprogramming.com -->
+<!-- All Rights Reserved -->
+<!-- Bowers Programming, phone: (360) 671-5280 -->
+<title>TUCF - Tufts University Core Facility - DNA Sequencing and Synthesis, Protein Sequencing, Peptide Synthesis Services</title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="DESCRIPTION" content="Tufts University Core Facility provides an extensive array of services to support researchers. Our services include DNA Synthesis of custom oligonuclotides, DNA and Protein Sequencing, Peptide Synthesis, Mass Spectrometer Analysis, and Proteomic HPLC / MS with Nanospray.">
+<meta name="KEYWORDS" content="custom peptide synthesis, DNA sequencing service, custom DNA synthesis, primer synthesis, oligonucleotide synthesis, mass spectrometry service, proteomic core facility, MALDI-TOF, chromatogram, ABI 3100 DNA sequencers, order online, chromatogram, genomics, next-gen dna sequencing, high-throughput dna sequencing, tucf genomics">
+<meta name="robots" content="index,follow">
+
+<script media="all" type="text/javascript">
+function show(id) {   document.getElementById(id).style.display='block';}
+function hide(id) {   document.getElementById(id).style.display='none';}
+</script>
+<body id="bodybg">
+
+
+<div id="hcenter">
+  <div id="dnaseq">
+    <%= image_tag("frontpage/fp-dnasequencingpicon.gif", :alt => "DNA Sequencing", :height => 59, :width => 59) %>
+  </div>
+  <div id="dnaseq_t" onmouseover="show('dnaseq');" onmouseout="hide('dnaseq');">
+      <%=link_to image_tag("frontpage/spacer.gif", :alt => "DNA Sequencing", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :dna_sequencing}, :class => is_active?("contact") -%>
+  </div>
+  <div id="proteinseq">
+    <%= image_tag("frontpage/fp-proteinsequencing-on.gif", :alt => "Protein Sequencing", :height => 59, :width => 59) %>
+  </div>
+  <div id="proteinseq_t" onmouseover="show('proteinseq');" onmouseout="hide('proteinseq');">
+      <%=link_to image_tag("frontpage/spacer.gif", :alt => "Protein Sequencing", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :protein_sequencing}, :class => is_active?("contact") -%>
+  </div>
+  <div id="dnasyn">
+    <%= image_tag("frontpage/fp-dnasynthesispicon.gif", :alt => "DNA Synthesis", :height => 59, :width => 59) %>
+  </div>
+  <div id="dnasyn_t" onmouseover="show('dnasyn');" onmouseout="hide('dnasyn');">
+      <%=link_to image_tag("frontpage/spacer.gif", :alt => "DNA Synthesis", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :dna_synthesis}, :class => is_active?("contact") -%>
+  </div>
+  <div id="nextgen">
+    <%= image_tag("frontpage/fp-nextgen-on.jpg", :alt => "High-Throughput DNA Sequencing", :height => 59, :width => 59) %>
+  </div>
+  <div id="nextgen_t" onmouseover="show('nextgen');" onmouseout="hide('nextgen');">
+    <a href="http://tucf-genomics.tufts.edu/" target="_top">
+      <%= image_tag("frontpage/spacer.gif", :alt => "Next-Gen DNA Sequencing", :height => 59, :width => 120, :border => 0) %>
+  </div>
+  <div id="peptide">
+    <%= image_tag("frontpage/fp-proteinsynthesispicon.gif", :alt => "Peptide Synthesis", :height => 59, :width => 59) %>
+  </div>
+  <div id="peptide_t" onmouseover="show('peptide');" onmouseout="hide('peptide');">
+      <%=link_to image_tag("frontpage/spacer.gif", :alt => "Peptide Synthesis", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :peptide_synthesis}, :class => is_active?("contact") -%>
+  </div>
+  <div id="about">
+      <%=link_to image_tag("frontpage/spacer.gif", :alt => "About Us", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :about_us}, :class => is_active?("contact") -%>
+  </div>
+  <div id="services">
+      <%=link_to image_tag("frontpage/spacer.gif", :alt => "Services", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :services}, :class => is_active?("contact") -%>
+  </div>
+  <div id="orders">
+    <%=link_to image_tag("frontpage/spacer.gif", :alt => "Ordering Information", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :ordering}, :class => is_active?("contact") -%>
+  </div>
+  <div id="contact">
+    <%=link_to image_tag("frontpage/spacer.gif", :alt => "Contact Us", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :contact}, :class => is_active?("contact") -%>
+  </div>
+  <div id="legal">
+    Copyright &copy; <br>Tufts University
+  </div>
+</div>
+
+</body>
+</html>

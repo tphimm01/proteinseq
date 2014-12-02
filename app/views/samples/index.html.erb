@@ -1,0 +1,53 @@
+<h1>Listing samples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>Name</th>
+      <th>Weight</th>
+      <th>Estimated amount</th>
+      <th>How estimated</th>
+      <th>Preparation</th>
+      <th>Blot</th>
+      <th>Pieces</th>
+      <th>Buffer</th>
+      <th>Volume</th>
+      <th>Concentration</th>
+      <th>Enzyme</th>
+      <th>Label</th>
+      <th>Amount</th>
+      <th>Special instructions</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @samples.each do |sample| %>
+      <tr>
+        <td><%= sample.order_id %></td>
+        <td><%= sample.name %></td>
+        <td><%= sample.weight %></td>
+        <td><%= sample.estimated_amount %></td>
+        <td><%= sample.how_estimated %></td>
+        <td><%= sample.preparation %></td>
+        <td><%= sample.blot %></td>
+        <td><%= sample.pieces %></td>
+        <td><%= sample.buffer %></td>
+        <td><%= sample.volume %></td>
+        <td><%= sample.concentration %></td>
+        <td><%= sample.enzyme %></td>
+        <td><%= sample.label %></td>
+        <td><%= sample.amount %></td>
+        <td><%= sample.special_instructions %></td>
+        <td><%= link_to 'Show', sample %></td>
+        <td><%= link_to 'Edit', edit_sample_path(sample) %></td>
+        <td><%= link_to 'Destroy', sample, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sample', new_sample_path %>

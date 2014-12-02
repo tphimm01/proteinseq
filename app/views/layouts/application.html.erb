@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tufts University Core Facility</title>
+  <link rel="shortcut icon" href="/assets/tucf.ico" >
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="keywords" content="TUCF, Protein, Sequencing">
+</head>
+<body>
+
+<table id="bodyholder" ALIGN=CENTER width=970px>
+<tr><td>
+  <!-- Header -->
+  <%= render 'layouts/header' %>
+
+  <!-- Navigation and main content table -->
+  <table id="main">
+  <tr>
+    <!-- Navigation Sidebar -->
+    <td class="leftnavcell" width=150px><%= render 'layouts/sidebar' %></td>
+
+    <td class="middlecontentcell">
+      <% if flash[:error] or flash[:notice] -%>
+        <p style="color: red; font-size: larger"><%= flash[:error] -%></p>
+        <p style="color: green; font-size: larger"><%= flash[:notice] -%></p>
+      <% end %>
+      
+      <%= yield :layout -%>
+    </td>
+       
+  </tr>  
+  </table>
+
+</td></tr>
+</table>
+
+  <!-- Footer -->
+  <%= render 'layouts/footer' %>
+
+
+</body>
+</html>

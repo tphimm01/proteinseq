@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  payment_option: MyString
+  tufts_dept_id: MyString
+  tufts_grant: MyString
+  tmc_cost_center: MyString
+  tmc_dept: MyString
+  tmc_box: MyString
+  company_name: MyString
+  po: MyString
+  credit_card_no: MyString
+  credit_card_exp: MyString
+  credit_card_cvvs: MyString
+  shipping_address: MyString
+  billing_address: MyString
+  tucf_startup_no: 1
+  tucf_startup_code: 1
+  tucf_cycle_no: 1
+  tucf_cycle_code: 1
+
+two:
+  user_id: 1
+  payment_option: MyString
+  tufts_dept_id: MyString
+  tufts_grant: MyString
+  tmc_cost_center: MyString
+  tmc_dept: MyString
+  tmc_box: MyString
+  company_name: MyString
+  po: MyString
+  credit_card_no: MyString
+  credit_card_exp: MyString
+  credit_card_cvvs: MyString
+  shipping_address: MyString
+  billing_address: MyString
+  tucf_startup_no: 1
+  tucf_startup_code: 1
+  tucf_cycle_no: 1
+  tucf_cycle_code: 1

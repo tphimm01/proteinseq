@@ -1,0 +1,120 @@
+a:link { color: #369; }
+a:visited { color: #f37d01; }
+img{ border: 0; }
+
+h1, h2, h3, h4, h5, h6 { color: #369; }
+h2 { border-bottom: 1px groove #369; }
+
+
+/* Rules for BODY */
+body
+{
+/*	background-color: #ededed; 	*/
+	background-color: #6699CC; 
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none; 
+}
+#bodyholder {
+  background-color: white;
+  border: 2px solid #dcdcdc;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right:auto;
+}
+#main
+{
+	border-top: 1px solid #dcdcdc;
+	list-style-type: disc;
+	font-weight: normal;
+	
+	/*margin-left: -10px;		*/
+}
+.middlecontentcell {
+	width: 750px;
+	padding: 1em;
+}
+/* End rules for BODY */
+
+
+/* Rules for TABLES */
+table, th, td{
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+}
+td
+{
+	vertical-align: top;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+th
+{
+	vertical-align: top;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+/* End rules for TABLES */
+
+
+/* Rules for fonts */
+.bodytext
+{
+	color: black;
+	font-size: 12px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.middle
+{
+	color: black;
+	font-size: 12px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	text-decoration: none;
+}
+pre, code
+{
+	font-family: "Courier New", courier, monospace;
+}
+.small
+ {
+	color: black;
+	font-size: 10px;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	text-decoration: none;
+}
+.wtext
+{
+	color: white;
+	font-size: 12px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	text-decoration: none;
+}
+/* End rules for fonts */
+
+
+#contentarea
+{
+	padding: 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+
+
+
+.marquee {
+	width:725px;
+	padding:5px;
+	background-color: yellow;
+	border: 3px solid rgba(0,0,0,0.3);
+	white-space: nowrap; 
+	overflow: hidden;
+}
