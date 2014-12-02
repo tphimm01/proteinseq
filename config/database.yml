@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: proteinseq_production
-  username: root
+  username: mpslims
   password: mpslims
 #  password: <%= ENV['secret_key_base'] %>
