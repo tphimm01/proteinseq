@@ -20,47 +20,47 @@ function hide(id) {   document.getElementById(id).style.display='none';}
 
 <div id="hcenter">
   <div id="dnaseq">
-    <%= image_tag("frontpage/fp-dnasequencingpicon.gif", :alt => "DNA Sequencing", :height => 59, :width => 59) %>
+    <%= image_tag("fp-dnasequencingpicon.gif", :alt => "DNA Sequencing", :height => 59, :width => 59) %>
   </div>
   <div id="dnaseq_t" onmouseover="show('dnaseq');" onmouseout="hide('dnaseq');">
-      <%=link_to image_tag("frontpage/spacer.gif", :alt => "DNA Sequencing", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :dna_sequencing}, :class => is_active?("contact") -%>
+      <%=link_to image_tag("spacer.gif", :alt => "DNA Sequencing", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :dna_sequencing}, :class => is_active?("contact") -%>
   </div>
   <div id="proteinseq">
-    <%= image_tag("frontpage/fp-proteinsequencing-on.gif", :alt => "Protein Sequencing", :height => 59, :width => 59) %>
+    <%= image_tag("fp-proteinsequencing-on.gif", :alt => "Protein Sequencing", :height => 59, :width => 59) %>
   </div>
   <div id="proteinseq_t" onmouseover="show('proteinseq');" onmouseout="hide('proteinseq');">
-      <%=link_to image_tag("frontpage/spacer.gif", :alt => "Protein Sequencing", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :protein_sequencing}, :class => is_active?("contact") -%>
+      <%=link_to image_tag("spacer.gif", :alt => "Protein Sequencing", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :protein_sequencing}, :class => is_active?("contact") -%>
   </div>
   <div id="dnasyn">
-    <%= image_tag("frontpage/fp-dnasynthesispicon.gif", :alt => "DNA Synthesis", :height => 59, :width => 59) %>
+    <%= image_tag("fp-dnasynthesispicon.gif", :alt => "DNA Synthesis", :height => 59, :width => 59) %>
   </div>
   <div id="dnasyn_t" onmouseover="show('dnasyn');" onmouseout="hide('dnasyn');">
-      <%=link_to image_tag("frontpage/spacer.gif", :alt => "DNA Synthesis", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :dna_synthesis}, :class => is_active?("contact") -%>
+      <%=link_to image_tag("spacer.gif", :alt => "DNA Synthesis", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :dna_synthesis}, :class => is_active?("contact") -%>
   </div>
   <div id="nextgen">
-    <%= image_tag("frontpage/fp-nextgen-on.jpg", :alt => "High-Throughput DNA Sequencing", :height => 59, :width => 59) %>
+    <%= image_tag("fp-nextgen-on.jpg", :alt => "High-Throughput DNA Sequencing", :height => 59, :width => 59) %>
   </div>
   <div id="nextgen_t" onmouseover="show('nextgen');" onmouseout="hide('nextgen');">
     <a href="http://tucf-genomics.tufts.edu/" target="_top">
-      <%= image_tag("frontpage/spacer.gif", :alt => "Next-Gen DNA Sequencing", :height => 59, :width => 120, :border => 0) %>
+      <%= image_tag("spacer.gif", :alt => "Next-Gen DNA Sequencing", :height => 59, :width => 120, :border => 0) %>
   </div>
   <div id="peptide">
-    <%= image_tag("frontpage/fp-proteinsynthesispicon.gif", :alt => "Peptide Synthesis", :height => 59, :width => 59) %>
+    <%= image_tag("fp-proteinsynthesispicon.gif", :alt => "Peptide Synthesis", :height => 59, :width => 59) %>
   </div>
   <div id="peptide_t" onmouseover="show('peptide');" onmouseout="hide('peptide');">
-      <%=link_to image_tag("frontpage/spacer.gif", :alt => "Peptide Synthesis", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :peptide_synthesis}, :class => is_active?("contact") -%>
+      <%=link_to image_tag("spacer.gif", :alt => "Peptide Synthesis", :height => 59, :width => 120, :border => 0, :target => 'top'), {:controller => :home, :action => :peptide_synthesis}, :class => is_active?("contact") -%>
   </div>
   <div id="about">
-      <%=link_to image_tag("frontpage/spacer.gif", :alt => "About Us", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :about_us}, :class => is_active?("contact") -%>
+      <%=link_to image_tag("spacer.gif", :alt => "About Us", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :about_us}, :class => is_active?("contact") -%>
   </div>
   <div id="services">
-      <%=link_to image_tag("frontpage/spacer.gif", :alt => "Services", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :services}, :class => is_active?("contact") -%>
+      <%=link_to image_tag("spacer.gif", :alt => "Services", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :services}, :class => is_active?("contact") -%>
   </div>
   <div id="orders">
-    <%=link_to image_tag("frontpage/spacer.gif", :alt => "Ordering Information", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :ordering}, :class => is_active?("contact") -%>
+    <%=link_to image_tag("spacer.gif", :alt => "Ordering Information", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :ordering}, :class => is_active?("contact") -%>
   </div>
   <div id="contact">
-    <%=link_to image_tag("frontpage/spacer.gif", :alt => "Contact Us", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :contact}, :class => is_active?("contact") -%>
+    <%=link_to image_tag("spacer.gif", :alt => "Contact Us", :height => 13, :width => 96, :border => 0), {:controller => :home, :action => :contact}, :class => is_active?("contact") -%>
   </div>
   <div id="legal">
     Copyright &copy; <br>Tufts University
