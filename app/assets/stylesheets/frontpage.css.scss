@@ -22,7 +22,7 @@ html { height:100%; }
 	margin-left:-315px;   
 	height:360px;   
 	width:630px;   
-	background: white url('frontpage/frontpage-background.jpg') no-repeat top center;
+	background: white asset_url('frontpage-background.jpg') no-repeat top center;
 }
 
 #dnaseq, #dnasyn, #nextgen, #peptide, #proteinseq {   
