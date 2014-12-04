@@ -1,8 +1,9 @@
 /* Rules for HEADER */
 #header
 {
-	/*	color: #369;	*/
-	background-image: url(/assets/header_bg.png);
+	/*	color: #369;	
+	background-image: url(/assets/header_bg.png);	*/
+	background: white asset_url('header_bg.png') no-repeat top center;
 	background-repeat: no-repeat;
 	background-position: right;	
 	color: #D17100;
