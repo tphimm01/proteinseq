@@ -12,13 +12,13 @@
     </div>
   <% end %>
 
-<h3><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"75" %></h3>
+<h3><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"40" %></h3>
 
 <center>
   <table class="protein">
     <tr>
       <td>
-        <b>Number of Cycles to Run: ________ cycles (please specify)</b>
+        <b>Number of Cycles to Run: ________ cycles</b> (please specify)
         <br>
         <br>a. <%= f.text_field :weight, :size=>"5" %> - <%= f.label :weight, 'Molecular Weight' %>
         <br>b. <%= f.text_field :estimated_amount, :size=>"5" %> - <%= f.label :estimated_amount %>
@@ -26,7 +26,7 @@
         <br><center><%= f.text_area :how_estimated, :size => "45x4" %></center>
       </td>
       <td>
-        <b>Sample Preparation: <%= f.text_field :preparation, :size=>"10" %> (check one)</b>
+        <b>Sample Preparation: <%= f.text_field :preparation, :size=>"10" %> (select one)</b>
         <table class="protein">
           <tr>
             <th>PVD Blot -</th>
@@ -50,9 +50,9 @@
   <table class="protein1">
     <tr>
       <td>
-        <b>Radio label</b>: <br>
+        <b>Radio label: <%= f.text_field :label, :size=>"10" %> (select one)</b><br>
         <center>
-          <%= f.text_field :label, :size=>"5" %> (Select one) | Amount <%= f.text_field :amount, :size=>"5" %> cpm<br><hr>
+          <b>Amount <%= f.text_field :amount, :size=>"5" %> cpm</b><br><hr>
           <%= f.label :label, '(Radiolabelled samples are restricted to <2000 cpm 3H, 14C, 32P or 35S.)' %><br>
         </center>
         <br>
