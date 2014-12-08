@@ -12,21 +12,21 @@
     </div>
   <% end %>
 
-<h3><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"40" %></h3>
+  <p><b><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"40" %></b></p>
 
-<center>
   <table class="protein">
+      <td><b>Number of Cycles to Run: <%= f.text_field :blot, :size=>"3" %> cycles</b> (please specify)</td>
+      <td><center><b>SAMPLE PREPARATION: <%= f.select(:preparation, @preparation_options) -%></b></center></td>
+    </tr>
     <tr>
       <td>
-        <b>Number of Cycles to Run: ________ cycles</b> (please specify)
-        <br>
-        <br>a. <%= f.text_field :weight, :size=>"5" %> - <%= f.label :weight, 'Molecular Weight' %>
-        <br>b. <%= f.text_field :estimated_amount, :size=>"5" %> - <%= f.label :estimated_amount %>
-        <br>c. <%= f.label :how_estimated, 'How was the amount of Protein estimated?' %> 
-        <br><center><%= f.text_area :how_estimated, :size => "45x4" %></center>
+        a. <%= f.text_field :weight, :size=>"5" %> - <%= f.label :weight, 'Molecular Weight' %><br>
+        b. <%= f.text_field :estimated_amount, :size=>"5" %> - <%= f.label :estimated_amount %><br>
+        c. <%= f.label :how_estimated, 'How was the amount of Protein estimated?' %> <br>
+        <center><%= f.text_area :how_estimated, :size => "45x6" %></center>
       </td>
       <td>
-        <b>Sample Preparation: <%= f.text_field :preparation, :size=>"10" %> (select one)</b>
+        <center>Please update the below input fields that are associated to the selected Sample Preparation ONLY.</center>
         <table class="protein">
           <tr>
             <th>PVD Blot -</th>
@@ -47,26 +47,17 @@
       </td>
     </tr>
   </table>
-  <table class="protein1">
-    <tr>
-      <td>
-        <b>Radio label: <%= f.text_field :label, :size=>"10" %> (select one)</b><br>
-        <center>
-          <b>Amount <%= f.text_field :amount, :size=>"5" %> cpm</b><br><hr>
-          <%= f.label :label, '(Radiolabelled samples are restricted to <2000 cpm 3H, 14C, 32P or 35S.)' %><br>
-        </center>
-        <br>
-        <b>NOTES: Special Instructions or considerations:</b><br>
-        <center><%= f.text_area :special_instructions, :size => "100x6" %></center>
-      </td>
-    </tr>
-  </table>
 
+  <p>
+    <b>RADIO LABEL: <%= f.select(:label, @label_options) -%> Amount <%= f.text_field :amount, :size=>"5" %> cpm</b><br>
+    <font style="background-color: #D0D0D0;"><%= f.label :label, '(Radiolabelled samples are restricted to <2000 cpm 3H, 14C, 32P or 35S.)' %></font><br><br>
+    <b>NOTES: SPECIAL INSTRUCTIONS or CONSIDERATIONS:</b><br>
+    <%= f.text_area :special_instructions, :size => "100x6" %>
+  </p>
+
+  <center>
     <p><b>SUBMIT BUTTON CURRENTLY DISABLED</b></p>
-<!--      <%= f.submit %>   -->
+    <!--      <%= f.submit %>   -->
+  </center>
     
-
-</center>
-
 <% end %>  
-

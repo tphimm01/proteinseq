@@ -13,6 +13,8 @@ class SamplesController < ApplicationController
   # GET /samples/new
   def new
     @sample = Sample.new
+    @preparation_options = ["(select one)","PVDF Blot","Liquid","Digestion"]
+    @label_options = ["(select one)","NONE","32P","35S","14C","3H"]
   end
 
   # GET /samples/1/edit
