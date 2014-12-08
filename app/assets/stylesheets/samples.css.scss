@@ -1,3 +1,69 @@
 // Place all the styles related to the Samples controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table.protein {
+	width: 100%;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	background: #FFFFCC;
+}
+table.protein td {
+	width: 50%;
+	vertical-align: top;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	padding: 3px;
+	border: 1px solid #C0C0C0;
+}
+table.protein th {
+//	width: 50%;
+	vertical-align: middle;
+	text-align: right;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+}
+
+
+// SAMPLE PREPARATION
+table.protein td td {
+	width: 60%;
+	vertical-align: top;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	padding: 3px;
+	border: 1px solid #C0C0C0;
+	background: #FFFF00;
+}
+
+
+
+// RADIO LABEL and NOTES
+table.protein1 {
+	width: 100%;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	background: pink; //#6699CC;
+}
+table.protein1 td {
+	width: 50%;
+	vertical-align: top;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	padding: 3px;
+}
+table.protein1 th {
+//	width: 50%;
+	vertical-align: top;
+	text-align: right;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+}

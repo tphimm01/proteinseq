@@ -1,3 +1,4 @@
+
 <%= form_for(@sample) do |f| %>
   <% if @sample.errors.any? %>
     <div id="error_explanation">
@@ -11,67 +12,61 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :order_id %><br>
-    <%= f.number_field :order_id %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :weight %><br>
-    <%= f.text_field :weight %>
-  </div>
-  <div class="field">
-    <%= f.label :estimated_amount %><br>
-    <%= f.text_field :estimated_amount %>
-  </div>
-  <div class="field">
-    <%= f.label :how_estimated %><br>
-    <%= f.text_area :how_estimated %>
-  </div>
-  <div class="field">
-    <%= f.label :preparation %><br>
-    <%= f.text_field :preparation %>
-  </div>
-  <div class="field">
-    <%= f.label :blot %><br>
-    <%= f.text_field :blot %>
-  </div>
-  <div class="field">
-    <%= f.label :pieces %><br>
-    <%= f.text_field :pieces %>
-  </div>
-  <div class="field">
-    <%= f.label :buffer %><br>
-    <%= f.text_field :buffer %>
-  </div>
-  <div class="field">
-    <%= f.label :volume %><br>
-    <%= f.text_field :volume %>
-  </div>
-  <div class="field">
-    <%= f.label :concentration %><br>
-    <%= f.text_field :concentration %>
-  </div>
-  <div class="field">
-    <%= f.label :enzyme %><br>
-    <%= f.text_field :enzyme %>
-  </div>
-  <div class="field">
-    <%= f.label :label %><br>
-    <%= f.text_field :label %>
-  </div>
-  <div class="field">
-    <%= f.label :amount %><br>
-    <%= f.text_field :amount %>
-  </div>
-  <div class="field">
-    <%= f.label :special_instructions %><br>
-    <%= f.text_area :special_instructions %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<h3><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"75" %></h3>
+
+<center>
+  <table class="protein">
+    <tr>
+      <td>
+        <b>Number of Cycles to Run: ________ cycles (please specify)</b>
+        <br>
+        <br>a. <%= f.text_field :weight, :size=>"5" %> - <%= f.label :weight, 'Molecular Weight' %>
+        <br>b. <%= f.text_field :estimated_amount, :size=>"5" %> - <%= f.label :estimated_amount %>
+        <br>c. <%= f.label :how_estimated, 'How was the amount of Protein estimated?' %> 
+        <br><center><%= f.text_area :how_estimated, :size => "45x4" %></center>
+      </td>
+      <td>
+        <b>Sample Preparation: <%= f.text_field :preparation, :size=>"10" %> (check one)</b>
+        <table class="protein">
+          <tr>
+            <th>PVD Blot -</th>
+            <td><%= f.text_field :pieces, :size=>"5" %> - Number of pieces</td>
+          </tr>
+          <tr>
+            <th>Liquid -</th>
+            <td>
+              <%= f.text_field :buffer, :size=>"5" %> - Buffer <br>
+              <%= f.text_field :volume, :size=>"5" %> - Volume <br>
+              <%= f.text_field :concentration, :size=>"5" %>[mg/ml] - Concentration
+            </td>
+          <tr>
+            <th>Digestion -</th>
+            <td><%= f.text_field :enzyme, :size=>"5" %> - Enzyme</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table class="protein1">
+    <tr>
+      <td>
+        <b>Radio label</b>: <br>
+        <center>
+          <%= f.text_field :label, :size=>"5" %> (Select one) | Amount <%= f.text_field :amount, :size=>"5" %> cpm<br><hr>
+          <%= f.label :label, '(Radiolabelled samples are restricted to <2000 cpm 3H, 14C, 32P or 35S.)' %><br>
+        </center>
+        <br>
+        <b>NOTES: Special Instructions or considerations:</b><br>
+        <center><%= f.text_area :special_instructions, :size => "100x6" %></center>
+      </td>
+    </tr>
+  </table>
+
+    <p><b>SUBMIT BUTTON CURRENTLY DISABLED</b></p>
+<!--      <%= f.submit %>   -->
+    
+
+</center>
+
+<% end %>  
+
