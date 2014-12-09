@@ -12,9 +12,11 @@
     </div>
   <% end %>
 
-  <p><b><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"40" %></b></p>
-
   <table class="protein">
+    <tr>
+      <td colspan="2"><b><%= f.label :name, 'SAMPLE NAME' %></b>: <%= f.text_field :name, :size=>"40" %></b></td>
+    </tr>
+    <tr>
       <td><b>Number of Cycles to Run: <%= f.text_field :blot, :size=>"3" %> cycles</b> (please specify)</td>
       <td><center><b>SAMPLE PREPARATION: <%= f.select(:preparation, @preparation_options) -%></b></center></td>
     </tr>
@@ -46,14 +48,21 @@
         </table>
       </td>
     </tr>
+    <tr>
+      <td colspan="2">
+        <p align=center>
+          <b>RADIO LABEL: <%= f.select(:label, @label_options) -%> Amount <%= f.text_field :amount, :size=>"5" %> cpm</b><br>
+          <font style="background-color: #D0D0D0;"><%= f.label :label, '(Radiolabelled samples are restricted to <2000 cpm 3H, 14C, 32P or 35S.)' %></font><br><br>
+          
+            <b>NOTES: SPECIAL INSTRUCTIONS or CONSIDERATIONS:</b><br>
+            <%= f.text_area :special_instructions, :size => "100x6" %>
+          
+        </p>
+      </td>
+    </tr>
   </table>
 
-  <p>
-    <b>RADIO LABEL: <%= f.select(:label, @label_options) -%> Amount <%= f.text_field :amount, :size=>"5" %> cpm</b><br>
-    <font style="background-color: #D0D0D0;"><%= f.label :label, '(Radiolabelled samples are restricted to <2000 cpm 3H, 14C, 32P or 35S.)' %></font><br><br>
-    <b>NOTES: SPECIAL INSTRUCTIONS or CONSIDERATIONS:</b><br>
-    <%= f.text_area :special_instructions, :size => "100x6" %>
-  </p>
+
 
   <center>
     <p><b>SUBMIT BUTTON CURRENTLY DISABLED</b></p>
